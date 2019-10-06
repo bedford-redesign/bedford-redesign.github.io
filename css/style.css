@@ -10,8 +10,6 @@ body {
   background-color: #eee;
 }
 
-
-
 a{
     font-size: 1.25rem;
 }
@@ -21,6 +19,7 @@ a:hover {
   }
 
 /* This is the mobile */
+
 @media screen and (min-width: 20em) {
   body {
     background-color: white;
@@ -50,9 +49,18 @@ a:hover {
     padding-top: 2rem;
   }
 
+.things-to-do{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 }
 
+/* End of Mobile Media Query */
+
 /* This is the desktop*/
+
 @media screen and (min-width: 60em) {
   body {
     background-color: lightgray;
@@ -105,16 +113,18 @@ a:hover {
   }
 }
 
+/* End of Media Query Desktop */
+
 .top-text h1{
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1rem;
     color:white;
 }
 
 .top-text h2 {
-  font-family: "Cabin Sketch", cursive;
-  font-size: 4rem;
+  font-family: "Cabin Sketch", cursive, sans-serif;
+  font-size: 5rem;
   text-transform: uppercase;
   margin: 0;
   color: white;
@@ -125,7 +135,10 @@ a:hover {
   }
   
   .top-text h3 {
+    font-family: Quintessential, Helvetica, sans-serif;
+    font-weight: normal;
     color: aqua;
+    font-size: 2rem;
   }
 
 h2 {
@@ -189,7 +202,7 @@ p {
 }
 
 .subscribe h3 {
-  font-family: "Cabin Sketch", cursive;
+  font-family: "Cabin Sketch", cursive, sans-serif;
   font-size: 2rem;
   color: dodgerblue;
 }
