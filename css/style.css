@@ -1,0 +1,200 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: auto;
+  background-color: #eee;
+}
+
+
+
+a{
+    font-size: 1.25rem;
+}
+
+a:hover {
+    color: dodgerblue;
+  }
+
+/* This is the mobile */
+@media screen and (min-width: 20em) {
+  body {
+    background-color: white;
+  }
+
+  .main-menu{
+      padding-top: 1rem;
+      text-align: left;
+      color: black;
+  }
+
+  .menu-item{
+      padding-bottom: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #585858;
+  }
+
+
+  .experiences {
+    padding-top: 5rem;
+  }
+
+  .bottom-browser {
+    padding-top: 2rem;
+  }
+
+}
+
+/* This is the desktop*/
+@media screen and (min-width: 60em) {
+  body {
+    background-color: lightgray;
+  }
+
+  .main-menu {
+    padding-top: 2rem;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .menu-item {
+    display: inline;
+    padding: 1rem;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .things-to-do {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .experiences {
+    padding-top: 5rem;
+  }
+
+  .things-to-do {
+    margin-inline-start: 5rem;
+    margin-inline-end: 5rem;
+  }
+
+  .underground-house {
+    margin-right: 1rem;
+  }
+
+  .dolphins {
+    margin-right: 1rem;
+  }
+
+  .bottom-browser {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem 0;
+  }
+}
+
+.top-text h1{
+    font-family: arial;
+    font-weight: normal;
+    font-size: 1rem;
+    color:white;
+}
+
+.top-text h2 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+}
+
+.top-text {
+    padding-top: 8rem;
+  }
+  
+  .top-text h3 {
+    color: aqua;
+  }
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  /* max-width: 900px; */
+  margin: auto;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.navigation {
+  text-align: center;
+  background-image: url(/img/background.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem;
+  border: thin black solid;
+  text-decoration: none;
+  margin: 2rem 0 0;
+  border-radius: 1rem;
+  color: black;
+}
+
+.button:hover {
+  background: white;
+}
+
+.experiences {
+  display: block;
+  text-align: center;
+}
+
+.things-to-do {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.things-to-do h3,
+p {
+  padding: 1rem 0 1rem 0;
+}
+
+.bottom-browser h3 {
+  font-size: 1rem;
+  color: grey;
+}
+
+.subscribe h3 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 2rem;
+  color: dodgerblue;
+}
+
+.social-media > i {
+  padding: 1rem;
+  font-size: 1rem;
+}
