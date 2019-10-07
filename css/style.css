@@ -10,39 +10,95 @@ body {
   background-color: #eee;
 }
 
-a{
-    font-size: 1.25rem;
+.navigation {
+    text-align: center;
+    background-image: url(/img/NZ-background4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+ul{
+    list-style: none;
 }
 
-a:hover {
-    color: dodgerblue;
-  }
 
 /* This is the mobile */
 
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 320px) {
   body {
-    background-color: white;
+    background-color: lightgrey;
   }
+
+  .top-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo img{
+    padding-top: 1rem;
+    width: 20%;
+    height: auto;
+}
+
+.nav-icons a{
+    padding: 1rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-icons li{
+   display: inline-block;
+}
 
   .main-menu{
       padding-top: 1rem;
-      text-align: left;
-      color: black;
+      text-size: 1rem;
   }
 
   .menu-item{
       padding-bottom: 0.5rem;
   }
 
+
   a {
     text-decoration: none;
-    color: #585858;
+    color: black;
+  }
+
+  .top-text{
+      padding-top: 2rem;
+  }
+
+  .top-text h2{
+      font-size: 4rem;
+  }
+
+  .bookings{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .bookings i{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    border: #404040 0.5rem solid;
+    margin-top: 1rem;
+  }
+
+
+  .bookings i:hover{
+      background: lightblue;
   }
 
 
   .experiences {
-    padding-top: 5rem;
+    padding-top: 3rem;
+    color: dodgerblue;
   }
 
   .bottom-browser {
@@ -59,6 +115,8 @@ a:hover {
 
 /* End of Mobile Media Query */
 
+
+
 /* This is the desktop*/
 
 @media screen and (min-width: 60em) {
@@ -66,24 +124,82 @@ a:hover {
     background-color: lightgray;
   }
 
-  .main-menu {
-    padding-top: 2rem;
-    text-align: center;
-    list-style-type: none;
-  }
-  
-  .menu-item {
-    display: inline;
-    padding: 1rem;
+  .top-grid{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr
   }
 
-  /* testing change for github */
+  .logo img{
+    padding-top: 2rem;
+    width: 60%;
+    height: auto;
+}
+
+  .main-menu{
+      text-align: center;
+  }
+
+  .menu-item{
+      display: inline-block;
+      padding-right: 2rem;
+  }
+  
+
+ .nav-icons a{
+      padding: 1rem;
+      color: #404040;
+      font-size: 1.5rem;
+  }
+
+ .nav-icons li{
+     display: inline-block;
+ }
 
   a {
     text-decoration: none;
-    color: white;
+    color: #404040;
   }
 
+  .top-text {
+    padding-top: 6rem;
+  }
+
+  .top-text h2{
+      font-size: 5rem;
+  }
+
+  .top-text h3{
+      font-size: 2rem;
+  }
+
+  .bookings{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  .bookings i{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .bookings i:hover{
+      background:lightblue;
+  }
+
+  .book-text{
+    padding: 1rem;
+    text-align: center;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  .about-NZ p{
+    font-size: 1rem;
+    padding: 2rem 10rem;
+  }
 
   .things-to-do {
     display: grid;
@@ -99,12 +215,8 @@ a:hover {
     margin-inline-end: 5rem;
   }
 
-  .underground-house {
-    margin-right: 1rem;
-  }
-
-  .dolphins {
-    margin-right: 1rem;
+  .to-do-img {
+    padding-right: 1rem;
   }
 
   .bottom-browser {
@@ -116,24 +228,27 @@ a:hover {
 
 /* End of Media Query Desktop */
 
+a{
+    font-size: 1.25rem;
+}
+
+a:hover {
+    color: dodgerblue;
+  }
+
 .top-text h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1rem;
-    color:white;
+    color: white;
 }
 
 .top-text h2 {
   font-family: "Cabin Sketch", cursive, sans-serif;
-  font-size: 5rem;
   text-transform: uppercase;
   margin: 0;
   color: white;
 }
-
-.top-text {
-    padding-top: 8rem;
-  }
   
   .top-text h3 {
     font-family: Quintessential, Helvetica, sans-serif;
@@ -142,10 +257,6 @@ a:hover {
     font-size: 2rem;
   }
 
-h2 {
-  font-size: 2rem;
-  margin: 0;
-}
 
 img {
   display: block;
@@ -154,18 +265,8 @@ img {
 }
 
 main {
-  /* max-width: 900px; */
   margin: auto;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.navigation {
-  text-align: center;
-  background-image: url(/img/background.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .button {
@@ -175,20 +276,62 @@ main {
   text-decoration: none;
   margin: 2rem 0 0;
   border-radius: 1rem;
-  color: black;
+  color: white;
+  background-color: #404040;
 }
 
 .button:hover {
-  background: white;
+  background: lightblue;
 }
 
-.experiences {
-  display: block;
+.navigation-2{
+  background-color: #404040;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+}
+
+
+.navigation-2 h1{
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem; 
+  font-weight: normal;
+  color: aqua;
+  background-color: lightgrey;
+}
+
+.about-NZ{
+  color: lightgrey;
+  padding: 2rem;
+  text-align: center;
+  border-top: #404040 thin solid;
+  background-image: url(/img/waterfall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.about-NZ h1{
+  color: white;
+  font-size: 2rem;
+}
+
+.about-NZ h2{
+  color: white;
+  font-size: 1.25rem;
+}
+
+
+.experiences {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .things-to-do {
-  padding-top: 5rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
