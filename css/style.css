@@ -30,7 +30,7 @@ ul{
   body {
     background-color: lightgrey;
   }
-
+  
   .top-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -75,6 +75,10 @@ ul{
       font-size: 4rem;
   }
 
+  .about-NZ{
+    overflow: hidden;
+  }
+
   .bookings{
     display: grid;
     grid-template-columns: 1fr;
@@ -115,7 +119,6 @@ ul{
 }
 
 /* End of Mobile Media Query */
-
 
 
 /* This is the desktop*/
@@ -173,7 +176,6 @@ ul{
   }
 
   .bookings{
-    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
   }
