@@ -1,5 +1,6 @@
 * {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
@@ -10,13 +11,16 @@ body {
   background-color: #eee;
 }
 
+header{
+  background-image: url(/img/NZ-background4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .navigation {
     text-align: center;
-    background-image: url(/img/NZ-background4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
 ul{
@@ -26,7 +30,6 @@ ul{
 
 /* This is the mobile */
 
-@media screen and (min-width: 320px) {
   body {
     background-color: lightgrey;
   }
@@ -38,8 +41,8 @@ ul{
 
 .logo img{
     padding-top: 1rem;
-    width: 20%;
-    height: auto;
+    height: 4em;
+    width: auto;
 }
 
 .nav-icons a{
@@ -73,10 +76,6 @@ ul{
 
   .top-text h2{
       font-size: 4rem;
-  }
-
-  .about-NZ{
-    overflow: hidden;
   }
 
   .bookings{
@@ -116,9 +115,6 @@ ul{
     margin-right: 3rem;
 }
 
-}
-
-/* End of Mobile Media Query */
 
 
 /* This is the desktop*/
