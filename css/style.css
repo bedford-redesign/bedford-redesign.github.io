@@ -64,7 +64,7 @@ ul{
 .logo img{
   padding-top: 1rem;
   height: 10em;
-  width: auto;
+  /* width: auto; */
 }
 
 .nav-icons a{
@@ -80,6 +80,7 @@ ul{
   .main-menu{
       padding-top: 1rem;
       font-size: 1rem;
+      text-align: justify;
   }
 
   .menu-item{
@@ -120,13 +121,9 @@ ul{
       background: lightblue;
   }
 
-  .experiences {
-    padding-top: 3rem;
-    color: var(--headings);
-  }
 
 a:hover {
-  color: dodgerblue;
+  color: var(--headings);
 }
 
 .top-text h1{
@@ -198,11 +195,6 @@ padding: 2rem;
 text-align: center;
 border-top: #404040 thin solid;
 border-bottom: #404040 thin solid;
-
-}
-
-.ratings{
-  color: var(--ratings);
 }
 
 .about-NZ b{
@@ -210,8 +202,9 @@ border-bottom: #404040 thin solid;
 }
 
 .about-NZ h1{
-color: dodgerblue;
+color: var(--headings);
 font-size: 2rem;
+padding: 1rem 0;
 }
 
 .about-NZ h2{
@@ -224,9 +217,20 @@ padding-top: 1rem;
   text-align: justify;
 }
 
+.ratings{
+  color: var(--ratings);
+  padding-bottom: 1rem;
+}
+
 .experiences {
 text-align: center;
 font-size: 2rem;
+padding-top: 3rem;
+color: var(--headings);
+}
+
+.things-to-do a{
+  border: 0.25rem solid var(--grey);
 }
 
 .things-to-do {
@@ -267,7 +271,7 @@ color: grey;
 .subscribe h3 {
 font-family: "Cabin Sketch", cursive, sans-serif;
 font-size: 2rem;
-color: dodgerblue;
+color: var(--headings);
 padding-top: 1rem;
 }
 
@@ -324,8 +328,6 @@ font-size: 1rem;
 /* End of Tablet */
 
 
-
-
 /* Desktop Version*/
 
 @media screen and (min-width: 60em) {
@@ -347,6 +349,10 @@ font-size: 1rem;
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
+  .main-menu{
+    text-align: center;
+  }
   
   .nav-icons{
     grid-column-start: 3;
@@ -366,7 +372,7 @@ font-size: 1rem;
   }
 
   a:hover {
-    color: dodgerblue;
+    color: var(--headings);
   }
 
   .menu-item a {
@@ -417,9 +423,7 @@ font-size: 1rem;
   
   .map{
     margin-top: 5rem;
-    width: auto;
   }
-  
 
   .things-to-do {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -433,12 +437,11 @@ font-size: 1rem;
 
   .to-do-img {
     padding-right: 1rem;
-    overflow: hidden;
     padding-bottom: 2rem;
   }
 
   .img-size{
-    height: 10rem;
+    height: 13rem;
   }
 
 
