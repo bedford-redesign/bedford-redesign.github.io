@@ -8,6 +8,8 @@
   --grey: #404040;
   --aqua: aqua;
   --headings: dodgerblue;
+  --ratings: #ff9900;
+  --icons: #44A890;
 }
 
 body {
@@ -55,6 +57,10 @@ ul{
   grid-column-end: 4;
 }
 
+.bookings i{
+  color: var(--icons);
+}
+
 /* End Test */
 
 
@@ -90,10 +96,6 @@ ul{
 
   .top-text{
       padding-top: 2rem;
-  }
-
-  .top-text h2{
-      font-size: 4rem;
   }
 
   .bookings{
@@ -137,6 +139,7 @@ a:hover {
 }
 
 .top-text h2 {
+  font-size: 4rem;
 font-family: "Cabin Sketch", cursive, sans-serif;
 text-transform: uppercase;
 margin: 0;
@@ -156,10 +159,10 @@ width: 100%;
 height: auto;
 }
 
-main {
+/* main {
 margin: auto;
 box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-}
+} */
 
 .button {
 display: inline-block;
@@ -193,12 +196,23 @@ color: #404040;
 background-color: lightgrey;
 }
 
+
 .about-NZ{
+display: grid;
+grid-template-columns: 1fr;
 color: black;
 padding: 2rem;
 text-align: center;
 border-top: #404040 thin solid;
 border-bottom: #404040 thin solid;
+}
+
+.ratings{
+  color: var(--ratings);
+}
+
+.about-NZ b{
+  color: #44A890;
 }
 
 .about-NZ h1{
@@ -211,6 +225,7 @@ color: white;
 font-size: 1.25rem;
 padding-top: 1rem;
 }
+
 
 .experiences {
 text-align: center;
@@ -226,19 +241,25 @@ font-size: 2rem;
   text-align: center;
 }
 
-.things-to-do h3,p {
-padding: 1rem 0 1rem 0;
+.things-to-do h3, p {
+padding: 0 0 1rem 0;
 }
 
 .things-to-do h2{
 color: var(--headings);
+padding-top: 1rem;
+}
+
+.to-do-img{
+  padding-bottom: 2rem;
 }
 
 .bottom-browser {
+  background-color: #404040;
+  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2rem 0;
-  margin-left: 3rem;
 }
 
 .bottom-browser h3 {
@@ -276,7 +297,44 @@ font-size: 1rem;
 
 
 
-/* This is the desktop*/
+/* Tablet Version */
+
+@media screen and (min-width: 1024px) {
+
+  .top-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    .menu{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+  .logo{
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  
+  .nav-icons{
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .about-NZ{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+
+
+}
+
+/* End of Tablet */
+
+
+
+
+/* Desktop Version*/
 
 @media screen and (min-width: 60em) {
   body {
@@ -320,6 +378,9 @@ font-size: 1rem;
       font-size: 1.5rem;
   }
 
+  a:hover {
+    color: dodgerblue;
+  }
 
   .menu-item a {
     text-decoration: none;
@@ -362,6 +423,16 @@ font-size: 1rem;
     padding: 1rem 2rem;
   }
 
+  .about-NZ{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .map{
+    margin-top: 5rem;
+  }
+  
+
   .things-to-do {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-inline-start: 5rem;
@@ -375,12 +446,12 @@ font-size: 1rem;
   .to-do-img {
     padding-right: 1rem;
     overflow: hidden;
+    padding-bottom: 2rem;
 
   }
 
   .bottom-browser {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 5rem;
   }
 
   .bottom-browser h3, li{
