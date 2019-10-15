@@ -6,7 +6,7 @@
 
 :root{
   --grey: #404040;
-  --aqua: aqua;
+  --bright: aqua;
   --headings: dodgerblue;
   --ratings: #ff9900;
   --icons: #44A890;
@@ -122,7 +122,7 @@ ul{
 
   .experiences {
     padding-top: 3rem;
-    color: dodgerblue;
+    color: var(--headings);
   }
 
 a:hover {
@@ -147,7 +147,7 @@ color: white;
 .top-text h3 {
   font-family: Quintessential, Helvetica, sans-serif;
   font-weight: normal;
-  color: aqua;
+  color: var(--bright);
   font-size: 2rem;
 }
 
@@ -198,6 +198,7 @@ padding: 2rem;
 text-align: center;
 border-top: #404040 thin solid;
 border-bottom: #404040 thin solid;
+
 }
 
 .ratings{
@@ -219,6 +220,9 @@ font-size: 1.25rem;
 padding-top: 1rem;
 }
 
+.about-NZ p{
+  text-align: justify;
+}
 
 .experiences {
 text-align: center;
@@ -286,7 +290,6 @@ font-size: 1rem;
 .bottom-browser h3, li{
   padding-bottom: 1rem;
 }
-
 
 /* Tablet Version */
 
@@ -432,8 +435,12 @@ font-size: 1rem;
     padding-right: 1rem;
     overflow: hidden;
     padding-bottom: 2rem;
-
   }
+
+  .img-size{
+    height: 10rem;
+  }
+
 
   .bottom-browser {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -445,10 +452,6 @@ font-size: 1rem;
 
   .end-nav{
     margin-left: 2rem;
-  }
-
-  .end-nav li{ 
-    text-decoration: none;
   }
 
 }
