@@ -35,22 +35,20 @@ ul{
     list-style: none;
 }
   
-  .top-grid{
+.top-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-/* Testing */
-
-.logo{
-  grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 .menu{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row: 1;
+}
+
+.logo{
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .nav-icons{
@@ -62,9 +60,6 @@ ul{
 .bookings i{
   color: var(--icons);
 }
-
-/* End Test */
-
 
 .logo img{
   padding-top: 1rem;
@@ -91,7 +86,12 @@ ul{
       padding-bottom: 0.5rem;
   }
 
+ .menu-item a{
+   color: var(--grey);
+ }
+
   a {
+    font-size: 1.25rem;
     text-decoration: none;
     color: black;
   }
@@ -125,10 +125,6 @@ ul{
     color: dodgerblue;
   }
 
-a{
-  font-size: 1.25rem;
-}
-
 a:hover {
   color: dodgerblue;
 }
@@ -160,11 +156,6 @@ display: block;
 width: 100%;
 height: auto;
 }
-
-/* main {
-margin: auto;
-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-} */
 
 .button {
 display: inline-block;
@@ -278,7 +269,7 @@ padding-top: 1rem;
 
 .subscribe button {
   background-color: #404040;
-  border: none;
+  border: 1rem thin white;
   color: white;
   padding: 1rem 2rem;
   text-align: center;
@@ -292,11 +283,9 @@ padding: 1rem;
 font-size: 1rem;
 }
 
-
 .bottom-browser h3, li{
   padding-bottom: 1rem;
 }
-
 
 
 /* Tablet Version */
@@ -304,8 +293,8 @@ font-size: 1rem;
 @media screen and (min-width: 1024px) {
 
   .top-grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  
 
     .menu{
       grid-column-start: 1;
@@ -314,20 +303,18 @@ font-size: 1rem;
 
   .logo{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
   }
   
   .nav-icons{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 
   .about-NZ{
     display: grid;
     grid-template-columns: 1fr;
   }
-  
-
 
 }
 
@@ -339,18 +326,14 @@ font-size: 1rem;
 /* Desktop Version*/
 
 @media screen and (min-width: 60em) {
+
   body {
     background-color: lightgray;
   }
 
   .top-grid{
       grid-template-columns: 1fr 3fr 1fr;
-      grid-row: 1;
   }
-
-
-  /* Test */
-
 
   .logo{
     grid-column-start: 1;
@@ -366,8 +349,6 @@ font-size: 1rem;
     grid-column-start: 3;
     grid-column-end: 4;
   }
-
-  /* End Test */
 
   .menu-item{
       display: inline-block;
@@ -433,6 +414,7 @@ font-size: 1rem;
   
   .map{
     margin-top: 5rem;
+    width: auto;
   }
   
 
@@ -461,7 +443,14 @@ font-size: 1rem;
     padding-bottom: 1rem;
   }
 
+  .end-nav{
+    margin-left: 2rem;
+  }
+
+  .end-nav li{ 
+    text-decoration: none;
+  }
 
 }
 
-/* End of Media Query Desktop */
+/* End of Desktop Version */
