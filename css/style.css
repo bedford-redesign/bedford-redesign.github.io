@@ -4,11 +4,17 @@
   padding: 0;
 }
 
+:root{
+  --grey: #404040;
+  --aqua: aqua;
+  --headings: dodgerblue;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   height: auto;
-  background-color: #eee;
+  background-color: lightgray;
 }
 
 header{
@@ -26,28 +32,41 @@ header{
 ul{
     list-style: none;
 }
-
-
-/* This is the mobile */
-
-  body {
-    background-color: lightgrey;
-  }
   
   .top-grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Testing */
+
+.logo{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.menu{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.nav-icons{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+/* End Test */
+
+
 .logo img{
-    padding-top: 1rem;
-    height: 10em;
-    width: auto;
+  padding-top: 1rem;
+  height: 10em;
+  width: auto;
 }
 
 .nav-icons a{
     padding: 1rem;
-    color: black;
+    color: var(--grey);
     font-size: 1.5rem;
 }
 
@@ -63,7 +82,6 @@ ul{
   .menu-item{
       padding-bottom: 0.5rem;
   }
-
 
   a {
     text-decoration: none;
@@ -89,30 +107,171 @@ ul{
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
-    border: #404040 0.5rem solid;
     margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-
 
   .bookings i:hover{
       background: lightblue;
   }
-
 
   .experiences {
     padding-top: 3rem;
     color: dodgerblue;
   }
 
-  .bottom-browser {
-    padding-top: 2rem;
-  }
+a{
+  font-size: 1.25rem;
+}
 
-.things-to-do{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 3rem;
-    margin-right: 3rem;
+a:hover {
+  color: dodgerblue;
+}
+
+.top-text h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+}
+
+.top-text h2 {
+font-family: "Cabin Sketch", cursive, sans-serif;
+text-transform: uppercase;
+margin: 0;
+color: white;
+}
+
+.top-text h3 {
+  font-family: Quintessential, Helvetica, sans-serif;
+  font-weight: normal;
+  color: aqua;
+  font-size: 2rem;
+}
+
+img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+main {
+margin: auto;
+box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.button {
+display: inline-block;
+padding: 0.5rem;
+border: thin black solid;
+text-decoration: none;
+margin: 2rem 0 0;
+border-radius: 1rem;
+color: white;
+background-color: #404040;
+}
+
+.button:hover {
+background: lightblue;
+}
+
+.navigation-2{
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 2rem;
+}
+
+
+.navigation-2 h1{
+text-align: center;
+padding-top: 2rem;
+padding-bottom: 1rem;
+font-size: 2rem; 
+font-weight: normal;
+color: #404040;
+background-color: lightgrey;
+}
+
+.about-NZ{
+color: black;
+padding: 2rem;
+text-align: center;
+border-top: #404040 thin solid;
+border-bottom: #404040 thin solid;
+}
+
+.about-NZ h1{
+color: dodgerblue;
+font-size: 2rem;
+}
+
+.about-NZ h2{
+color: white;
+font-size: 1.25rem;
+padding-top: 1rem;
+}
+
+.experiences {
+text-align: center;
+font-size: 2rem;
+}
+
+.things-to-do {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.things-to-do h3,p {
+padding: 1rem 0 1rem 0;
+}
+
+.things-to-do h2{
+color: var(--headings);
+}
+
+.bottom-browser {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0;
+  margin-left: 3rem;
+}
+
+.bottom-browser h3 {
+font-size: 1rem;
+color: grey;
+}
+
+.subscribe h3 {
+font-family: "Cabin Sketch", cursive, sans-serif;
+font-size: 2rem;
+color: dodgerblue;
+padding-top: 1rem;
+}
+
+.subscribe button {
+  background-color: #404040;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.social-media > i {
+padding: 1rem;
+font-size: 1rem;
+}
+
+
+.bottom-browser h3, li{
+  padding-bottom: 1rem;
 }
 
 
@@ -127,15 +286,27 @@ ul{
   .top-grid{
       grid-template-columns: 1fr 3fr 1fr
   }
-/* 
-  .logo img{
-    height: 6em;
-    width: auto;
-} */
 
-  .main-menu{
-      text-align: center;
+
+  /* Test */
+
+
+  .logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
+  
+  .menu{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .nav-icons{
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  /* End Test */
 
   .menu-item{
       display: inline-block;
@@ -149,9 +320,6 @@ ul{
       font-size: 1.5rem;
   }
 
- .nav-icons li{
-     display: inline-block;
- }
 
   .menu-item a {
     text-decoration: none;
@@ -171,7 +339,7 @@ ul{
   }
 
   .bookings{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
   }
 
@@ -179,10 +347,6 @@ ul{
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
-  }
-
-  .bookings i:hover{
-      background:lightblue;
   }
 
   .book-text{
@@ -194,161 +358,36 @@ ul{
   }
 
   .about-NZ p{
-    font-size: 1rem;
-    padding: 1rem 10rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 
   .things-to-do {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-inline-start: 5rem;
+    margin-inline-end: 5rem;
   }
 
   .experiences {
     padding-top: 5rem;
   }
 
-  .things-to-do {
-    margin-inline-start: 5rem;
-    margin-inline-end: 5rem;
-  }
-
   .to-do-img {
     padding-right: 1rem;
+    overflow: hidden;
+
   }
 
   .bottom-browser {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 3rem 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5rem;
   }
+
+  .bottom-browser h3, li{
+    padding-bottom: 1rem;
+  }
+
+
 }
 
 /* End of Media Query Desktop */
-
-a{
-    font-size: 1.25rem;
-}
-
-a:hover {
-    color: dodgerblue;
-  }
-
-.top-text h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    color: white;
-}
-
-.top-text h2 {
-  font-family: "Cabin Sketch", cursive, sans-serif;
-  text-transform: uppercase;
-  margin: 0;
-  color: white;
-}
-  
-  .top-text h3 {
-    font-family: Quintessential, Helvetica, sans-serif;
-    font-weight: normal;
-    color: aqua;
-    font-size: 2rem;
-  }
-
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-main {
-  margin: auto;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5rem;
-  border: thin black solid;
-  text-decoration: none;
-  margin: 2rem 0 0;
-  border-radius: 1rem;
-  color: white;
-  background-color: #404040;
-}
-
-.button:hover {
-  background: lightblue;
-}
-
-.navigation-2{
-  background-color: #404040;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: 2rem;
-}
-
-
-.navigation-2 h1{
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  font-size: 2rem; 
-  font-weight: normal;
-  color: #404040;
-  background-color: lightgrey;
-}
-
-.about-NZ{
-  color: lightgrey;
-  padding: 2rem;
-  text-align: center;
-  border-top: #404040 thin solid;
-  background-image: url(/img/waterfall.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.about-NZ h1{
-  color: aqua;
-  font-size: 2rem;
-}
-
-.about-NZ h2{
-  color: white;
-  font-size: 1.25rem;
-  padding-top: 1rem;
-}
-
-
-.experiences {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.things-to-do {
-  padding-top: 3rem;
-  text-align: center;
-}
-
-.things-to-do h3,
-p {
-  padding: 1rem 0 1rem 0;
-}
-
-.bottom-browser h3 {
-  font-size: 1rem;
-  color: grey;
-}
-
-.subscribe h3 {
-  font-family: "Cabin Sketch", cursive, sans-serif;
-  font-size: 2rem;
-  color: dodgerblue;
-}
-
-.social-media > i {
-  padding: 1rem;
-  font-size: 1rem;
-}
