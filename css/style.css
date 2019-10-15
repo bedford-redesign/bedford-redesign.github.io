@@ -50,11 +50,13 @@ ul{
 .menu{
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row: 1;
 }
 
 .nav-icons{
   grid-column-start: 3;
   grid-column-end: 4;
+  grid-row: 1;
 }
 
 .bookings i{
@@ -342,7 +344,8 @@ font-size: 1rem;
   }
 
   .top-grid{
-      grid-template-columns: 1fr 3fr 1fr
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-row: 1;
   }
 
 
