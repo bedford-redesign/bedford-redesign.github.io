@@ -203,13 +203,35 @@ padding: 1rem 0;
 }
 
 .about-NZ h2{
-color: white;
+color: black;
 font-size: 1.25rem;
 padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 2rem;
 }
 
 .about-NZ p{
   text-align: justify;
+}
+
+
+.travel-advice{
+  border: grey thin solid;
+  text-align: center;
+  margin-left: 3rem;
+}
+
+
+.travel-advice i{
+  color: var(--icons);
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.camera{
+  border-bottom: grey thin solid;
 }
 
 .ratings{
@@ -422,11 +444,13 @@ font-size: 1.25rem;
 
   .about-NZ{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
-  /* .map{
-    margin-top: 5rem;
+  /* .travel-advice{
+    border: grey thin solid;
+    text-align: center;
+    margin-left: 3rem;
   } */
 
   .things-to-do {
