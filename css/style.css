@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   height: auto;
-  background-color: lightgray;
+  background-color: white;
 }
 
 header{
@@ -170,9 +170,10 @@ background: lightblue;
 }
 
 .navigation-2{
-margin-left: 5rem;
+/* margin-left: 5rem;
 margin-right: 5rem;
-margin-bottom: 2rem;
+margin-bottom: 2rem; */
+background-color: lightgrey;
 }
 
 
@@ -183,7 +184,7 @@ padding-bottom: 1rem;
 font-size: 2rem; 
 font-weight: normal;
 color: #404040;
-background-color: lightgrey;
+
 }
 
 
@@ -236,8 +237,8 @@ color: var(--headings);
 .things-to-do {
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
   padding-top: 3rem;
   text-align: center;
 }
@@ -332,10 +333,6 @@ font-size: 1rem;
 
 @media screen and (min-width: 60em) {
 
-  body {
-    background-color: lightgray;
-  }
-
   .top-grid{
       grid-template-columns: 1fr 3fr 1fr;
   }
@@ -412,7 +409,7 @@ font-size: 1rem;
   }
 
   .about-NZ p{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem 2rem;
   }
 
@@ -427,8 +424,7 @@ font-size: 1rem;
 
   .things-to-do {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-inline-start: 5rem;
-    margin-inline-end: 5rem;
+    margin-inline-start: 2rem;
   }
 
   .experiences {
@@ -446,7 +442,10 @@ font-size: 1rem;
 
 
   .bottom-browser {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #404040;
+    max-width: 100%;
+    margin:auto;
   }
 
   .bottom-browser h3, li{
@@ -454,7 +453,7 @@ font-size: 1rem;
   }
 
   .end-nav{
-    margin-left: 2rem;
+    margin-left: 5rem;
   }
 
 }
