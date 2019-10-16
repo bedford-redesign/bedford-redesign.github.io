@@ -28,17 +28,17 @@ header{
 }
 
 .navigation {
-    text-align: center;
-    min-height: 100vh;
+  text-align: center;
+  min-height: 100vh;
   }
 
 ul{
-    list-style: none;
+  list-style: none;
 }
   
 .top-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .logo{
@@ -61,62 +61,61 @@ ul{
 .logo img{
   padding-top: 1rem;
   height: 10em;
-  /* width: auto; */
 }
 
-  .main-menu{
-      padding-top: 1rem;
-      font-size: 1rem;
-      text-align: justify;
+.main-menu{
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: justify;
   }
 
-  .menu-item{
-      padding-bottom: 0.5rem;
+.menu-item{
+  padding-bottom: 0.5rem;
   }
 
- .menu-item a{
-   color: var(--grey);
+.menu-item a{
+  color: var(--grey);
  }
 
-  a {
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: black;
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
   }
 
   .nav-icons a{
-    padding: 1rem;
-    color: var(--grey);
-    font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--grey);
+  font-size: 1.5rem;
 }
 
 .nav-icons li{
-   display: inline-block;
+  display: inline-block;
 }
 
-  .top-text{
-      padding-top: 2rem;
-  }
+.top-text{
+    padding-top: 2rem;
+}
 
-  .bookings{
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 2rem 0;
-  }
+.bookings{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: 2rem 0;
+}
 
-  .bookings i{
-    text-align: center;
-    color: var(--icons);
-    padding: 1rem;
-    font-size: 2rem;
-    margin: 1rem 2rem 0 2rem;
-  }
+.bookings i{
+  text-align: center;
+  color: var(--icons);
+  padding: 1rem;
+  font-size: 2rem;
+  margin: 1rem 2rem 0 2rem;
+}
 
 
-  .bookings i:hover{
-      background: var(--light);
-  }
+.bookings i:hover{
+    background: var(--light);
+}
 
 
 a:hover {
@@ -152,18 +151,18 @@ height: auto;
 }
 
 .button {
-display: inline-block;
-padding: 0.5rem;
-border: thin black solid;
-text-decoration: none;
-margin: 2rem 0 0;
-border-radius: 1rem;
-color: white;
-background-color: var(--grey);
+  display: inline-block;
+  padding: 0.5rem;
+  border: thin black solid;
+  text-decoration: none;
+  margin: 2rem 0 0;
+  border-radius: 1rem;
+  color: white;
+  background-color: var(--grey);
 }
 
 .button:hover {
-background: var(--light);
+  background: var(--light);
 }
 
 .navigation-2{
@@ -172,23 +171,23 @@ background-color: lightgrey;
 
 
 .navigation-2 h1{
-text-align: center;
-padding-top: 2rem;
-padding-bottom: 1rem;
-font-size: 2rem; 
-font-weight: normal;
-color: var(--grey);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem; 
+  font-weight: normal;
+  color: var(--grey);
 }
 
 
 .about-NZ{
-display: grid;
-grid-template-columns: 1fr;
-color: black;
-padding: 2rem;
-text-align: center;
-border-top: #404040 thin solid;
-border-bottom: #404040 thin solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: black;
+  padding: 2rem;
+  text-align: center;
+  border-top: #404040 thin solid;
+  border-bottom: #404040 thin solid;
 }
 
 .about-NZ b{
@@ -196,17 +195,17 @@ border-bottom: #404040 thin solid;
 }
 
 .about-NZ h1{
-color: var(--headings);
-font-size: 2rem;
-padding: 1rem 0;
+  color: var(--headings);
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 .about-NZ h2{
-color: black;
-font-size: 1.25rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
-padding-left: 2rem;
+  color: black;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .about-NZ p{
@@ -238,10 +237,10 @@ padding-left: 2rem;
 }
 
 .experiences {
-text-align: center;
-font-size: 2rem;
-padding-top: 3rem;
-color: var(--headings);
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  color: var(--headings);
 }
 
 .things-to-do a{
@@ -256,12 +255,12 @@ color: var(--headings);
 }
 
 .things-to-do h3, p {
-padding: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .things-to-do h2{
-color: var(--headings);
-padding-top: 1rem;
+  color: var(--headings);
+  padding-top: 1rem;
 }
 
 .to-do-img{
@@ -277,8 +276,8 @@ padding-top: 1rem;
 }
 
 .bottom-browser h3 {
-font-size: 1rem;
-color: grey;
+  font-size: 1rem;
+  color: grey;
 }
 
 .bottom-browser a{
@@ -286,9 +285,9 @@ color: grey;
 }
 
 .subscribe h3 {
-font-family: "Cabin Sketch", cursive, sans-serif;
-font-size: 2rem;
-color: var(--headings);
+  font-family: "Cabin Sketch", cursive, sans-serif;
+  font-size: 2rem;
+  color: var(--headings);
 }
 
 .subscribe button {
@@ -309,8 +308,8 @@ color: var(--headings);
 }
 
 .social-media i {
-font-size: 1.25rem;
-padding-right: 3rem;
+  font-size: 1.25rem;
+  padding-right: 3rem;
 }
 
 .bottom-browser h3, li{
@@ -340,10 +339,10 @@ padding-right: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
   
 
-    .menu{
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
+  .menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 
   .logo{
     grid-column-start: 2;
@@ -397,15 +396,15 @@ padding-right: 3rem;
     padding-right: 2rem;
 }
 
-.menu-item a {
-  text-decoration: none;
-  color: var(--grey);
+  .menu-item a {
+    text-decoration: none;
+    color: var(--grey);
 }
 
  .nav-icons a{
-      padding: 1rem;
-      color: #404040;
-      font-size: 1.5rem;
+    padding: 1rem;
+    color: #404040;
+    font-size: 1.5rem;
   }
 
   a:hover {
@@ -417,11 +416,11 @@ padding-right: 3rem;
   }
 
   .top-text h2{
-      font-size: 5rem;
+    font-size: 5rem;
   }
 
   .top-text h3{
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .bookings{
@@ -494,7 +493,6 @@ padding-right: 3rem;
   .shop{
     margin-left: 2rem;
   }
-
 
 }
 
