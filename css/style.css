@@ -228,7 +228,6 @@ padding-left: 2rem;
   padding-bottom: 2rem;
 }
 
-
 .camera{
   border-bottom: grey thin solid;
 }
@@ -273,7 +272,7 @@ padding-top: 1rem;
   background-color: var(--grey);
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 2rem 0;
 }
 
@@ -285,7 +284,6 @@ color: grey;
 .bottom-browser a{
   color: white;
 }
-
 
 .subscribe h3 {
 font-family: "Cabin Sketch", cursive, sans-serif;
@@ -304,17 +302,27 @@ color: var(--headings);
   font-size: 1rem;
 }
 
-.social-media i {
-font-size: 1.25rem;
+.social-media{
+  text-align: center;
+  padding-top: 5rem;
+  padding-right: 3rem;
 }
 
-.social-media li{
-  display: inline;
-  padding-right: 3rem;
+.social-media i {
+font-size: 1.25rem;
+padding-right: 3rem;
 }
 
 .bottom-browser h3, li{
   padding-bottom: 1rem;
+}
+
+.bottom-browser li{
+  border-bottom: thin solid grey;
+}
+
+.subscribe{
+  text-align: center;
 }
 
 .copyright{
@@ -481,10 +489,6 @@ font-size: 1.25rem;
 
   .bottom-bookings{
     margin-left: 2rem;
-  }
-
-  .subscribe{
-    margin-left: 3rem;
   }
 
   .shop{
