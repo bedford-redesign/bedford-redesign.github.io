@@ -112,9 +112,7 @@ ul{
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 1rem 2rem 0 2rem;
   }
 
   .bookings i:hover{
@@ -135,10 +133,10 @@ a:hover {
 
 .top-text h2 {
   font-size: 4rem;
-font-family: "Cabin Sketch", cursive, sans-serif;
-text-transform: uppercase;
-margin: 0;
-color: white;
+  font-family: "Cabin Sketch", cursive, sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
 }
 
 .top-text h3 {
@@ -170,9 +168,6 @@ background: lightblue;
 }
 
 .navigation-2{
-/* margin-left: 5rem;
-margin-right: 5rem;
-margin-bottom: 2rem; */
 background-color: lightgrey;
 }
 
@@ -183,8 +178,7 @@ padding-top: 2rem;
 padding-bottom: 1rem;
 font-size: 2rem; 
 font-weight: normal;
-color: #404040;
-
+color: var(--grey);
 }
 
 
@@ -237,8 +231,6 @@ color: var(--headings);
 .things-to-do {
   display: grid;
   grid-template-columns: 1fr;
-  /* margin-left: 3rem;
-  margin-right: 3rem; */
   padding-top: 3rem;
   text-align: center;
 }
@@ -269,11 +261,15 @@ font-size: 1rem;
 color: grey;
 }
 
+.bottom-browser a{
+  color: white;
+}
+
+
 .subscribe h3 {
 font-family: "Cabin Sketch", cursive, sans-serif;
 font-size: 2rem;
 color: var(--headings);
-padding-top: 1rem;
 }
 
 .subscribe button {
@@ -287,13 +283,24 @@ padding-top: 1rem;
   font-size: 1rem;
 }
 
-.social-media > i {
-padding: 1rem;
-font-size: 1rem;
+.social-media i {
+font-size: 1.25rem;
+}
+
+.social-media li{
+  display: inline;
+  padding-right: 3rem;
 }
 
 .bottom-browser h3, li{
   padding-bottom: 1rem;
+}
+
+.copyright{
+  display: block;
+  background-color: var(--grey);
+  text-align: center;
+  color: white;
 }
 
 /* Tablet Version */
@@ -418,13 +425,14 @@ font-size: 1rem;
     grid-template-columns: 1fr 1fr;
   }
   
-  .map{
+  /* .map{
     margin-top: 5rem;
-  }
+  } */
 
   .things-to-do {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-inline-start: 2rem;
+    margin-inline-start: 3rem;
+    margin-inline-end: 3rem;
   }
 
   .experiences {
@@ -432,8 +440,7 @@ font-size: 1rem;
   }
 
   .to-do-img {
-    padding-right: 1rem;
-    padding-bottom: 2rem;
+    padding: 0 1rem 2rem 0;
   }
 
   .img-size{
@@ -455,6 +462,19 @@ font-size: 1rem;
   .end-nav{
     margin-left: 5rem;
   }
+
+  .bottom-bookings{
+    margin-left: 2rem;
+  }
+
+  .subscribe{
+    margin-left: 3rem;
+  }
+
+  .shop{
+    margin-left: 2rem;
+  }
+
 
 }
 
