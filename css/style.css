@@ -216,7 +216,6 @@ background-color: lightgrey;
 .travel-advice{
   border: grey thin solid;
   text-align: center;
-  margin-left: 3rem;
 }
 
 
@@ -441,6 +440,11 @@ background-color: lightgrey;
     font-weight: normal;
     font-size: 2rem;
   }
+
+  .travel-advice{
+    margin-left: 3rem;
+  }
+  
 
   .about-NZ p{
     font-size: 1.25rem;
